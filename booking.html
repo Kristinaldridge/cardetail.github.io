@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Lacey Detailing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="booking-section">
+            <h1>Book an Appointment</h1>
+            <form id="booking-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="exterior">Exterior Detailing-Standard</option>
+                    <option value="exterior-premium">Exterior Detailing-Premium</option>
+                    <option value="interior">Interior Detailing</option>
+                    <option value="tint">Window Tinting</option>
+                   
+                </select>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time">
+                <button type="submit">Submit</button>
+                <br>
+            </form>
+            <div id="booking-list">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lacey Auto Detailing. All rights reserved.</p>
+    </footer>
+
+    <script src="booking-cards.js"></script>
+</body>
+</html>
